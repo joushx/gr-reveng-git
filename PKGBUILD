@@ -9,13 +9,12 @@ arch=('x86_64')
 url="https://github.com/paulgclark/gr-reveng"
 license=()
 depends=('gnuradio')
-makedepends=('swig')
 source=('git+https://github.com/paulgclark/gr-reveng')
 md5sums=('SKIP')
 
 build() {
     cd "$_pkgname"
-    cmake -B build
+    cmake -DCMAKE_INSTALL_PREFIX:PATH=/usr -B build
     cmake --build build
 }
 
