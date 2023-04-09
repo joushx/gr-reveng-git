@@ -9,6 +9,7 @@ arch=('x86_64')
 url="https://github.com/paulgclark/gr-reveng"
 license=()
 depends=('gnuradio')
+makedepends=('swig')
 source=('git+https://github.com/paulgclark/gr-reveng')
 md5sums=('SKIP')
 
